@@ -1,0 +1,218 @@
+/* David Zak 158458174 Section B */
+
+body {
+margin: 0px;
+overflow: hidden;
+background-color:rgb(242, 242, 255);
+overflow: auto;
+}
+footer { 
+font-size: 1.4vw;
+}
+
+
+#main{
+width: 55vw;
+margin: 3% 5%;
+border-left: 10px solid red;
+
+float: left;
+}
+
+#main p {
+
+text-align: center;
+margin-bottom: 10px;
+
+}
+
+header h1{
+color: white;
+display: inline;
+}
+
+
+header {
+margin: 0px;
+padding: 0px 10px 15px 20px;
+border-top: black 2px solid;
+
+width: 100%;
+background-color: rgb(175, 22, 22);
+}
+
+nav{
+padding: 10px;
+background-color:rgb(175, 22, 22);
+display: block;
+float: left;
+height: 100vh;
+width: 10vw;
+border-right: black 2px inset;
+
+
+}
+
+nav a{
+color: black;
+display: block;
+font-size: 1.8vw;
+font-weight: bold;
+
+
+
+
+}
+nav a:active{ 
+background-color: white;
+color:rgb(175, 22, 22);
+}
+
+#glove {
+
+width: 50px;
+height: 50px;
+display: inline;
+
+}
+
+p{
+margin: 0px;
+}
+
+
+#box{
+display:none;
+}
+
+#main p:hover img{
+
+display: inline;
+margin: 25px auto;
+opacity: .75;
+
+}
+
+footer{
+	position:fixed;
+	bottom: 10px;
+	color: #333333;
+}
+
+input {
+	
+	margin:4px;
+}
+#main1 {
+	margin-left: 10vw;
+	margin-top:  30px;
+	width: 50vw;
+	float: left;
+	height: 85vh;
+	left: 20%;
+	border-left: 5px solid red;
+	margin-left: 5vw;
+	
+	
+}
+
+#main1 h2{
+padding: 5px;	
+}
+
+
+input, textarea, select, button {
+width : 25vw;
+margin: auto;
+box-sizing: border-box;
+}
+
+
+
+
+
+form{ 
+
+padding: 10px;
+
+}
+ #ad{
+	 
+	 margin: 3vh;
+	 height: 80vh;
+	 width: 15vw;
+
+	 float: right;
+	 border-right: 3px solid black;
+
+	 
+	 
+	
+ }
+ #ad:hover{
+	 cursor:pointer;
+ }
+ 
+ #errors {
+	 width: 30vw;
+	 float: left;
+	 background-color: white;
+	 border: 1px solid black;
+	 margin-top:  50px;
+	 
+
+ }
+ 
+ #errors h5{
+	 margin: 0px;
+ }
+
+ 
+ @media (max-width:904px){
+	 nav{
+		 display:block;
+		 text-align: center;
+		 width: 100%;
+		 border: none;
+		 height: auto; 
+	 }
+	 
+	 nav a{
+		 font-size: 20px;
+		 padding: 5px;
+		 
+		 
+	 }
+	 
+	 #ad{
+		 display: none;
+	 }
+	 
+	 #main {
+		 width: auto;
+	 }
+	 
+ }
+ 
+  
+ @media (max-width:600px){
+	 
+	 #main1{
+		 float: none;
+		 height:auto;
+	 }
+	 
+	 #errors {
+		 float:unset;
+		 width: 90vw;
+		 margin: 15px auto;
+		 background-color: white;
+		 border: red;
+	 }
+	 
+	 footer{
+		 display: block;
+		 position: static;
+
+	 }
+ }

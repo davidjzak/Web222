@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--* David Zak 158458174 Section B */ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<title> David Zak's Boxing Store</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<script src="registration.js"></script>
+</head>
+<body>
+<header>
+<h1> Daves Boxing Supplies </h1><img id="glove" alt="glove" src="images/bgloves.png">
+</header>
+<nav>
+<a href="index.html"> Home </a>
+<a href="registration.html"> Registration</a>
+</nav>
+
+<div id="main1">
+<h2>Register Now and get Ass Kicking! </h2>
+<br>
+
+<form id="reg" name="signup" method="post" action="https://httpbin.org/post"  onsubmit='return validate();'>
+<label for="firstname">First Name:</label>
+<br>
+<input name="fname" required="required" id="firstname" onchange="checkfname()">
+<br>
+<label for="lastname">Last Name:</label>
+<br>
+<input name="lname" required="required" id="lastname" onchange="checklname()">
+<br>
+<label for="usernameid">Username:</label>
+<br>
+<input type="text" name="username" id="usernameid" onchange="checkUser()" required="required">
+
+<br>
+<label for="password"> Password:</label>
+<br>
+<input type="password" name="password" id="password" maxlength="8" required="required">
+
+<br>
+ 
+<label for="password1" > Re-enter Password: </label>
+<br>
+<input type="password" name="password1" id="password1" maxlength="8" onchange="checkPassword()" required="required" >
+
+<br>
+<label for="province">Province: </label>
+<br>
+<select name="province" id="province">
+    <option value="ontario">Ontario</option>
+    <option value="quebec">Quebec</option>
+    <option value="newfoundland">Newfoundland </option>
+    <option value="manitoba">Manitoba</option>
+	<option value="yukon"> Yukon</option>
+	<option value="northWest"> Nort West Territories</option>
+	<option value="nunavut">Nunavut</option>
+	<option value="bc"> British Columbia</option>
+	<option value="alberta">Alberta</option>
+	<option value="sasketchewan">Sasketchewan</option>
+	<option value="pei">Prince Edward Island</option>
+	<option value="nova">Nova Scotia</option>
+</select>
+
+<br>
+
+<label for="emailid"> Email: </label>
+<br>
+<input name="email" type="email" required="required" id="emailid" placeholder="example@gmail.com" title="Please enter a valid email">
+
+<br>
+<label for="phoneid" title="please follow"  >Phone Number: </label>
+<br>
+<input name="phone" required="required" id="phoneid" title="###-###-#####" 
+maxlength="12" placeholder="###-###-#####" pattern="^\d{3}-\d{3}-\d{4}$">
+
+<br>
+<label for="zipid" > Zip Code:</label>
+<br>
+<input name="zip" id="zipid" required="required" onchange="checkZip()">
+
+<br>
+<label for="cityid" > City: </label>
+<br>
+<input name="city"  id="cityid" required="required" onchange="checkCity()">
+
+<br>
+<label for="streetid">Street Name:</label>
+<br>
+<input name="street" id="streetid" required="required" onchange="checkStreet()">
+<br>
+<label for="unitid">House/Apt#: </label>
+<br>
+<input name="unit" id="unitid" required="required" onchange="checkUnit()">
+<br>
+<input type="submit" value="Get Boxing" >
+<input type="reset" value="Clear All Fields" onclick="clearErrors()" >
+<input type="hidden" name="Zak" id="Zak" value="Zak" /> 
+<input type="hidden" name="studentid" id="studentid" value="158458174" /> 
+
+</form>
+</div>
+<div id="errors" ><h5> Errors:</h5><div id="innerErrors"></div></div>
+<footer>
+<p> &copy; David Zak 2018</p>
+</footer>
+
+</body>
+</html>
